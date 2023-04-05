@@ -3,9 +3,6 @@ let userName = prompt("Inserisci il tuo NOME").toLowerCase();
 let userSurname = capitalizeWord(prompt("Inserisci il tuo COGNOME"));
 let userfavColor = capitalizeWord(prompt("Inserisci il tuo COLORE PREFERITO"));
 
-alert(`Ciao ${userName}! Sto generando la tua password...`);
-alert(`Sì esatto, era un caricamento fasullo. In realtà la tua password l'ho generata da un bel pezzo eh (che brutto colore comunque il ${userfavColor.toLowerCase()})`);
-
 if (userName == "" || userSurname == "" || userfavColor == "") {
     document.getElementById("passResult").innerHTML = 
     `
@@ -15,6 +12,10 @@ if (userName == "" || userSurname == "" || userfavColor == "") {
     `;
     document.getElementById("my-boxBefore").style.backgroundColor = "red";
 }else{
+
+    alert(`Ciao ${capitalizeWord(userName)}! Sto generando la tua password...`);
+    alert(`Sì esatto, era un caricamento fasullo. In realtà la tua password l'ho generata da un bel pezzo eh (che brutto colore comunque il ${userfavColor.toLowerCase()})`);
+
     document.getElementById("passResult").innerHTML = 
     `
     <span class="badge text-bg-success fs-4 text-wrap mw-100">
