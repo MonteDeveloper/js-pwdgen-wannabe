@@ -4,7 +4,7 @@
     }
 }
 
-.my-box {
+#my-box {
     position: relative;
 	z-index: 0;
 	border-radius: 10px;
@@ -12,8 +12,7 @@
     overflow: hidden;
 }
 
-.my-box::before {
-    content: '';
+#my-boxBefore {
     position: absolute;
     z-index: -2;
     left: 50%;
@@ -27,7 +26,7 @@
     animation: rotate 10s linear infinite;
 }
 
-.my-box::after {
+#my-box::after {
     content: '';
     position: absolute;
     z-index: -1;
