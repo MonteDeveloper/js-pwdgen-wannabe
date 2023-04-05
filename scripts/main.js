@@ -4,7 +4,7 @@ let userSurname = capitalizeWord(prompt("Inserisci il tuo COGNOME"));
 let userfavColor = capitalizeWord(prompt("Inserisci il tuo COLORE PREFERITO"));
 
 alert(`Ciao ${userName}! Sto generando la tua password...`);
-alert(`Sì esatto, era un caricamento fasullo. In realtà la tua password l'ho generata da un bel pezzo eh (che brutto colore comunque il ${userfavColor})`);
+alert(`Sì esatto, era un caricamento fasullo. In realtà la tua password l'ho generata da un bel pezzo eh (che brutto colore comunque il ${userfavColor.toLowerCase()})`);
 
 if (userName == "" || userSurname == "" || userfavColor == "") {
     document.getElementById("passResult").innerHTML = 
