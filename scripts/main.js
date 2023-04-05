@@ -1,7 +1,7 @@
-let thisYear = 2023;
-let userName = prompt("Inserisci il tuo NOME").toLowerCase();
-let userSurname = capitalizeWord(prompt("Inserisci il tuo COGNOME"));
-let userfavColor = capitalizeWord(prompt("Inserisci il tuo COLORE PREFERITO"));
+// let thisYear = 2023;
+// let userName = prompt("Inserisci il tuo NOME").toLowerCase();
+// let userSurname = capitalizeWord(prompt("Inserisci il tuo COGNOME"));
+// let userfavColor = capitalizeWord(prompt("Inserisci il tuo COLORE PREFERITO"));
 
 alert(`Ciao ${userName}! Sto generando la tua password...`);
 
